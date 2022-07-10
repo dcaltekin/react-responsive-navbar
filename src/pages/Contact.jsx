@@ -1,14 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import ProfileCard from "../components/ProfileCard";
 
-function Home() {
+function Contact() {
   return (
     <div>
       <Navbar />
-      <ProfileCard />
+      Contact
     </div>
   );
 }
 
-export default Home;
+export default Contact;

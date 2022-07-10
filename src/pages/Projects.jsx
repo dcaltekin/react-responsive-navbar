@@ -1,14 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import ProfileCard from "../components/ProfileCard";
 
-function Home() {
+function Projects() {
   return (
     <div>
       <Navbar />
-      <ProfileCard />
+      <div className="text-7xl mt-8"> Projects</div>
     </div>
   );
 }
 
-export default Home;
+export default Projects;

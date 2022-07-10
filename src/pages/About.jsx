@@ -1,14 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import ProfileCard from "../components/ProfileCard";
 
-function Home() {
+function About() {
   return (
     <div>
       <Navbar />
-      <ProfileCard />
+      About
     </div>
   );
 }
 
-export default Home;
+export default About;
