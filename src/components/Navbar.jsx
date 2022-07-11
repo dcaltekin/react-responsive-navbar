@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
+import classNames from "classnames";
 
-function Navbar() {
+function Navbar({ activeTab }) {
+  const [active, setActive] = useState(activeTab);
   const [icon, setIcon] = useState(true);
   const handleIcon = () => {
     setIcon(!icon);
@@ -26,19 +28,40 @@ function Navbar() {
             }
           >
             <Link to="/">
-              <h1 className="p-2 hover:cursor-pointer hover:border-b-yellow-300 hover:border-b-2 sm:mt-8 sm:ml-0 ml-28 ">
+              <button
+                onClick={() => setActive(0)}
+                className={classNames({
+                  "p-2 hover:cursor-pointer sm:mt-8 sm:ml-0 ml-2": true,
+                  "border-b-2 border-b-yellow-300 bg-gray-400 rounded":
+                    active === 0,
+                })}
+              >
                 Home
-              </h1>
+              </button>
             </Link>
             <Link to="/projects">
-              <h1 className="p-2 hover:cursor-pointer hover:border-b-yellow-300 hover:border-b-2">
+              <button
+                onClick={() => setActive(1)}
+                className={classNames({
+                  "p-2 hover:cursor-pointer sm:mt-8 sm:ml-0 ml-2": true,
+                  "border-b-2 border-b-yellow-300 bg-gray-400 rounded":
+                    active === 1,
+                })}
+              >
                 Projects
-              </h1>
+              </button>
             </Link>
             <Link to="/about">
-              <h1 className="p-2 hover:cursor-pointer hover:border-b-yellow-300 hover:border-b-2">
+              <button
+                onClick={() => setActive(2)}
+                className={classNames({
+                  "p-2 hover:cursor-pointer sm:mt-8 sm:ml-0 ml-2": true,
+                  "border-b-2 border-b-yellow-300 bg-gray-400 rounded":
+                    active === 2,
+                })}
+              >
                 About
-              </h1>
+              </button>
             </Link>
           </div>
           <div className="sm:hidden md:block lg:block xl:block">

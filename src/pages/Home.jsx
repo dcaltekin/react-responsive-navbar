@@ -5,7 +5,7 @@ import ProfileCard from "../components/ProfileCard";
 function Home() {
   return (
     <div>
-      <Navbar />
+      <Navbar activeTab={0} />
       <ProfileCard />
     </div>
   );

@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 function Projects() {
   return (
     <div>
-      <Navbar />
+      <Navbar activeTab={1} />
       <div></div>
     </div>
   );
