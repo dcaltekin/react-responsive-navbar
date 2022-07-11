@@ -5,7 +5,7 @@ function Projects() {
   return (
     <div>
       <Navbar />
-      <div className="text-7xl mt-8"> Projects</div>
+      <div></div>
     </div>
   );
 }

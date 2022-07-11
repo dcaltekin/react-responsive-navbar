@@ -7,11 +7,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Prompt", sans-serif;
-  background-color: gray;
-  height: 80vh;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  height: 80vh;
 }
